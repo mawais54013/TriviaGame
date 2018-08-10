@@ -1,0 +1,94 @@
+<!-- Still need to add display for when user selects correct or wrong answer -->
+<!-- Also need to fix having user select answer and it moves to the next answer -->
+<!-- No reart button need to refresh to start over -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Set the background the image here  -->
+</head>
+<style>
+    body
+    {
+        background-image: url("assets/images/img4.jpg");
+    }
+</style>
+<body>
+<!-- set the image for the header here  -->
+    <header><img src = "assets/images/img5.jpg" style= "width: 400px"></header>
+</br>
+</br>
+<!-- created a container and form using bootstrap -->
+    <div class="container">
+            <div class = "row">
+                <div class = "col">
+                    <!-- timer will be shown here and will start once the start button is pushed -->
+                </div>
+                <div class = "col-5" id = "timer" style="color:yellow">
+                    Timer here
+                </div>
+                <div class = "col">
+
+                </div>
+            </div>
+            <!-- used bootstrap as the main area of the quiz in this area -->
+            <div class="jumbotron jumbotron-fluid" id = "hidet" style="background-image: url(assets/images/img6.jpg); background-size: 99%; color:yellow;">
+                <div id = "trivia">
+                    <!-- Questions shown with this <p> tag -->
+                    <div class="container" id = "text1">
+                      <p class="question" id = "question"> </p>
+                    </div>
+                    <!-- these represent four radio buttons that user can have options of  -->
+                    <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value=0>
+                            <label class="form-check-label" for="inlineRadio1"></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value=1>
+                            <label class="form-check-label" for="inlineRadio2"></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value=2>
+                            <label class="form-check-label" for="inlineRadio3"></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value=3>
+                                <label class="form-check-label" for="inlineRadio4"></label>
+                            </div>
+                    </div>
+                  </div>
+                  <!-- use a final text area here to show final results with different background -->
+                  <div class = "jumbotron jumbotron-fluid" id = "end" style="background-image: url(assets/images/img6.jpg); background-size: 99%; color:yellow;">
+                    <div class="container" id = "text2">
+                        <p class="results" id = "results" style="color:yellow"></p>
+                        <p class="results1" id = "results1" style="color:yellow"></p>
+                        <p class="results2" id = "results2" style="color:yellow"></p>
+                      </div>
+                  </div>
+            
+            <div class="row">
+              <div class="col">
+                <!-- Made a seperate area for button and col here  -->
+              </div>
+              <div class="col-5" id = "text1">
+                    <button type="button" class="btn btn-primary btn-lg" id = "button1">Start</button>
+              </div>
+              <div class="col">
+                
+              </div>
+            </div>
+          </div>
+    <script src="assets/javascript/app.js">
+    
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
