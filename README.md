@@ -3,7 +3,7 @@
 Star Wars Trivia Game created with Jquery and Javascript. There are 8 questions, answer the questions before the time runs out.
 
 # Link to deployed site 
-[Star Wars Trivia](file:///Users/muhammadawais/Desktop/TriviaGame/index.html)
+[Star Wars Trivia](https://mawais54013.github.io/TriviaGame/)
 
 [Portfolio](https://mawais54013.github.io/Bootstrap-Portfolio/portfolio.html)
 
