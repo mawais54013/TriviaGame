@@ -64,13 +64,23 @@ function decrement()
     //note: cannot click and answer and another question appears, must wait until timer is done
     number--;
     $("#timer").html("Time remaining until next question: " + number + " seconds");
-    if((number === 0))
+    var checked1 = $("#inlineRadio1").is(":checked");
+    var checked2 = $("#inlineRadio2").is(":checked");
+    var checked3 = $("#inlineRadio3").is(":checked");
+    var checked4 = $("#inlineRadio4").is(":checked");
+    console.log(checked1);
+    if((number === 0) || (checked1 == true) || (checked2 == true) || (checked3 == true) || (checked4 == true))
     {
         num1--;
         num2++;
         clearInterval(interval);
         nextQuestion();
+        checked1 = false;
+        checked2 = false;
+        checked3 = false;
+        checked4 = false;
     }
+
 }
 
 function setUp()
