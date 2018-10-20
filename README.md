@@ -5,7 +5,7 @@ Star Wars Trivia Game created with Jquery and Javascript. There are 8 questions,
 # Link to deployed site 
 [Star Wars Trivia](https://mawais54013.github.io/TriviaGame/)
 
-[Portfolio](https://mawais54013.github.io/Bootstrap-Portfolio/portfolio.html)
+[Portfolio](https://mawais54013.github.io/New-Portfolio/)
 
 # Images
 ![Game](assets/images/screen1.png)
